@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "nodemailer": "^6.9.16",
+    "request": "^2.88.2"
+  },
+  "name": "vocabulary",
+  "version": "1.0.0",
+  "description": "\"# VocabularyEmail\"",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
