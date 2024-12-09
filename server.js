@@ -1,7 +1,7 @@
 var nodemailer=require('nodemailer')
 var http=require('http')
 const request = require('request');
-
+var {vocabularyWords}=require('./vocabulary')
 var word="";
 var meaning="";
 
@@ -9,32 +9,7 @@ function meaningGet()
 {
     
 
-var vocabularyWords = [
-    "Abstract",    // Existing in thought but not in physical form
-    "Ambiguous",   // Open to more than one interpretation
-    "Analyze",     // Examine methodically for explanation
-    "Anomaly",     // Something different from the norm
-    "Arbitrary",   // Based on random choice or personal whim
-    "Candid",      // Truthful and straightforward
-    "Conundrum",   // A confusing or difficult problem
-    "Daunting",    // Intimidating or seemingly difficult
-    "Diligent",    // Showing care in one's work or duties
-    "Eloquent",    // Fluent or persuasive in speaking or writing
-    "Ephemeral",   // Lasting for a very short time
-    "Fortuitous",  // Happening by chance; lucky
-    "Inevitable",  // Certain to happen; unavoidable
-    "Innovate",    // To introduce new ideas or methods
-    "Lucid",       // Expressed clearly; easy to understand
-    "Ostentatious",// Designed to impress or attract notice
-    "Paradigm",    // A typical example or pattern of something
-    "Pragmatic",   // Dealing with things sensibly and realistically
-    "Proficient",  // Competent or skilled in doing something
-    "Resilient",   // Able to recover quickly from difficulties
-    "Scrutinize",  // To examine closely and thoroughly
-    "Substantiate",// Provide evidence to support or prove
-    "Tenacious",   // Persistent and determined
-    "Vindicate"    // Clear someone of blame or suspicion
-  ];
+
 
      
     var i=Math.floor(Math.random()*vocabularyWords.length);
